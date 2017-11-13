@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+// PRøver å endre litt her
 namespace SOKlasseLib
 {
     interface InterfaceSentral

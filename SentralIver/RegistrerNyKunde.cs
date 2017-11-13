@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SOKlasseLib;
-
+//TEST
 namespace SentralIver
 {
     public partial class RegistrerNyKunde : Form
