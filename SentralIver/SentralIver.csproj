@@ -69,6 +69,12 @@
     <Compile Include="RegistrerNyKunde.Designer.cs">
       <DependentUpon>RegistrerNyKunde.cs</DependentUpon>
     </Compile>
+    <Compile Include="SlettKunde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlettKunde.Designer.cs">
+      <DependentUpon>SlettKunde.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrerNyKunde.resx">
       <DependentUpon>RegistrerNyKunde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlettKunde.resx">
+      <DependentUpon>SlettKunde.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

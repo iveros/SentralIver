@@ -52,7 +52,7 @@ namespace SOKlasseLib
          // DETTE ER EN MIDLERTIDIG FUNKSJON FOR Å SKRIVE UT KUNDELISE
         public string SkrivUtKundeliste(int KID)
         {
-            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + " Kid: " + KundeListe[KID].KID + "\n");
+            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + "\t  Kid: " + KundeListe[KID].KID + "\n");
             return utskrift;
         }
 
