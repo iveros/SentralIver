@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-// PRøver å endre litt her
+
 namespace SOKlasseLib
 {
     interface InterfaceSentral
@@ -52,18 +52,14 @@ namespace SOKlasseLib
          // DETTE ER EN MIDLERTIDIG FUNKSJON FOR Å SKRIVE UT KUNDELISE
         public string SkrivUtKundeliste(int KID)
         {
-            /*for(int i = 1; i <= KID; i++)
-            {
-            }*/
-            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + "Kid: " + KundeListe[KID].KID);
+            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + " Kid: " + KundeListe[KID].KID + "\n");
             return utskrift;
-            
         }
 
 
 
 
-
+        
         public void SlettKunde(int KID)
         {
             if (KundeListe[IndexKID(KID)] != null)
