@@ -35,7 +35,7 @@ namespace SentralIver
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Feil: " + ex.ToString());
+                MessageBox.Show("Feil: " + ex.Message);
             }
             
         }

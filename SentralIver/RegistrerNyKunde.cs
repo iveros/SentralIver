@@ -49,7 +49,7 @@ namespace SentralIver
 
 
 
-        // Midlertidig metode for autogenerering av kunder
+        // Midlertidig metode for autogenerering av 5 kunder
         private void btnAuto_Click(object sender, EventArgs e)
         {
             string navn, adresse, passord, IP;
@@ -107,6 +107,8 @@ namespace SentralIver
             {
                 MessageBox.Show(ex.ToString());
             }
+
+            this.Close();
         }
     }
 }
