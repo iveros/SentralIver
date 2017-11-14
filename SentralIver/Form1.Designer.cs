@@ -95,6 +95,7 @@ namespace SentralIver
             this.btnSlettenkunde.TabIndex = 4;
             this.btnSlettenkunde.Text = "Slett en kunde";
             this.btnSlettenkunde.UseVisualStyleBackColor = true;
+            this.btnSlettenkunde.Click += new System.EventHandler(this.btnSlettenkunde_Click);
             // 
             // button4
             // 

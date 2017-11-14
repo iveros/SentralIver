@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,11 @@ namespace SentralIver
             nySentral.RegistrerKunde(n, a, k, p, i);
             this.kid = k;
         }
+
+        public void slettKunde(int kid)
+        {
+            nySentral.SlettKunde(kid);
+        }
         
         
         private void btnAvslutt_Click(object sender, EventArgs e)
@@ -48,13 +54,13 @@ namespace SentralIver
             formKundeoversikt.Show();
         }
 
+        private void btnSlettenkunde_Click(object sender, EventArgs e)
+        {
+            SlettKunde slettkunde = new SlettKunde(this);
+            slettkunde.Show();
+
+        }
 
 
-
-
-
-
-
-       
     }
 }

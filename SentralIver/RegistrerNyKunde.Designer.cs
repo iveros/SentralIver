@@ -40,6 +40,7 @@
             this.txtIP = new System.Windows.Forms.TextBox();
             this.btn_Lagre = new System.Windows.Forms.Button();
             this.btn_Avbryt = new System.Windows.Forms.Button();
+            this.btnAuto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtKid
@@ -154,11 +155,22 @@
             this.btn_Avbryt.UseVisualStyleBackColor = true;
             this.btn_Avbryt.Click += new System.EventHandler(this.btn_Avbryt_Click);
             // 
+            // btnAuto
+            // 
+            this.btnAuto.Location = new System.Drawing.Point(122, 12);
+            this.btnAuto.Name = "btnAuto";
+            this.btnAuto.Size = new System.Drawing.Size(182, 32);
+            this.btnAuto.TabIndex = 12;
+            this.btnAuto.Text = "Autogenerer 5 kunder";
+            this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
+            // 
             // RegistrerNyKunde
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 435);
+            this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btn_Avbryt);
             this.Controls.Add(this.btn_Lagre);
             this.Controls.Add(this.label5);
@@ -192,5 +204,6 @@
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Button btn_Lagre;
         private System.Windows.Forms.Button btn_Avbryt;
+        private System.Windows.Forms.Button btnAuto;
     }
 }

@@ -8,9 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
-//nyeste klasseLib 11:30 14/11/17 
-
+// PRøver å endre litt her
 namespace SOKlasseLib
 {
     interface InterfaceSentral
@@ -51,8 +49,8 @@ namespace SOKlasseLib
 
         public void SlettKunde(int KID)
         {
-            if (KundeListe[GetKIDIndex(KID)] != null)
-                KundeListe.RemoveAt(GetKIDIndex(KID));
+            if (KundeListe[IndexKID(KID)] != null)
+                KundeListe.RemoveAt(KID);
         }
 
         static public int GetKIDIndex(int finnKID)
@@ -290,7 +288,7 @@ namespace SOKlasseLib
         }
 
         //når HUS mottar forespørsel fra SENTRAL svarer den med å sende forbruk tilbake
-        public void MottaSentral() 
+        public void MottaSentral()
         {
             Socket lytteSokkel = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint husServer = new IPEndPoint(IPAddress.Parse(EgenIP), 9051);   //oppretter server der HUS mottar forbruksforespørsel fra SENTRAL
@@ -394,4 +392,3 @@ namespace SOKlasseLib
         }
     }
 }
-
