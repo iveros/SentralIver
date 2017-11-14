@@ -58,7 +58,7 @@ namespace SentralIver
         {
             SlettKunde slettkunde = new SlettKunde(this);
             slettkunde.Show();
-
+            
         }
 
 

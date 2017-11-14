@@ -21,7 +21,8 @@ namespace SentralIver
 
         public void skrivUtKundeoversikt(Sentral o, int KID)
         {
-            int antallKunder;
+            // FEIL HER SKAL o.KundeListe.Count() stå.
+            int antallKunder = 1;
             
             for (int i = 0; i < antallKunder; i++)
             {
