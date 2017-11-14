@@ -63,7 +63,8 @@ namespace SOKlasseLib
         public void SlettKunde(int KID)
         {
             if (KundeListe[IndexKID(KID)] != null)
-                KundeListe.RemoveAt(KID);
+                KundeListe.RemoveAt(GetKIDIndex(KID));
+            //KundeListe.RemoveAt(KID);
         }
 
         public int IndexKID(int finnKID)
