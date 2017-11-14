@@ -48,6 +48,13 @@ namespace SOKlasseLib
             KundeListe.Add(new Kunde(innNavn, innAdresse, innKID, innPassord, ipAdresse));
         }
 
+        // DETTE ER EN MIDLERTIDIG FUNKSJON FOR Å SKRIVE UT KUNDELISE
+        public string SkrivUtKundeliste(int KID)
+        {
+            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + "\tKid: " + KundeListe[KID].KID + "\n");
+            return utskrift;
+        }
+        
         public void SlettKunde(int KID)
         {
             if (KundeListe[GetKIDIndex(KID)] != null)

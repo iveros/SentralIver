@@ -21,9 +21,9 @@ namespace SentralIver
 
         public void skrivUtKundeoversikt(Sentral o, int KID)
         {
-            int antallKunder = o.KundeListe.Count();
-
-            for (int i=0 ; i< antallKunder; i++)
+            int antallKunder;
+            
+            for (int i = 0; i < antallKunder; i++)
             {
                 richKundeliste.AppendText(o.SkrivUtKundeliste(i)); // Midlertidig funksjon i SO_Klasser
             }
