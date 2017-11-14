@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+// PRøver å endre litt her
 namespace SOKlasseLib
 {
     interface InterfaceSentral
@@ -49,17 +49,6 @@ namespace SOKlasseLib
             KundeListe.Add(new Kunde(innNavn, innAdresse, innKID, innPassord, ipAdresse));
         }
 
-         // DETTE ER EN MIDLERTIDIG FUNKSJON FOR Å SKRIVE UT KUNDELISE
-        public string SkrivUtKundeliste(int KID)
-        {
-            string utskrift = ("Navn: " + KundeListe[KID].KundeNavn + "\t  Kid: " + KundeListe[KID].KID + "\n");
-            return utskrift;
-        }
-
-
-
-
-        
         public void SlettKunde(int KID)
         {
             if (KundeListe[IndexKID(KID)] != null)
